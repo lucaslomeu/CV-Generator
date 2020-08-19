@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo Vitae - Generator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+
+    <form method="get" action=".">
+        <div class="info">
+            <h1>Informações pessoais</h1>
+            <label for="">Nome completo:</label>
+            <input type="text">
+
+            <label for="">Idade</label>
+            <input type="text">
+
+            <label for="">Sexo:</label>
+            <input type="radio" id="man" name="gender" value="masculino">
+            <label for="man">Masculino</label>
+            <input type="radio" id="woman" name="gender" value="feminino">
+            <label for="woman">Feminino</label>
+
+            <label for="">Nacionalidade:</label>
+            <input type="text">
+
+            <label for="">Email:</label>
+            <input type="text">
+
+            <label for="">Telefone:</label>
+            <input type="text">
+        </div>
+
+        <hr>
+
+        <div class="adress">
+            <h1>Endereço</h1>
+            <label>Cep:
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                    onblur="pesquisacep(this.value);" /></label><br />
+            <label>Rua:
+                <input name="rua" type="text" id="rua" size="60" /></label><br />
+            <label>Bairro:
+                <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+            <label>Cidade:
+                <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+            <label>Estado:
+                <input name="uf" type="text" id="uf" size="2" /></label><br />
+            <label>IBGE:
+                <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+
+            <h1>Objetivo</h1>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <hr>
+
+        <div class="academic">
+            <h1>Formação Acadêmica</h1>
+            <select name="" id="">
+                <option value="">Ensino Médio Incompleto</option>
+                <option value="">Ensino Médio Completo</option>
+                <option value="">Ensino Superior Incompleto</option>
+                <option value="">Ensino Superior Completo</option>
+                <option value="">Pós-graduação</option>
+            </select>
+
+            <label for="">Curso:</label>
+            <input type="text">
+        </div>
+
+        <hr>
+
+        <div class="exp">
+            <label for="">Nome da empresa:</label>
+            <input type="text">
+
+            <label for="">De</label>
+            <input id="date" type="date">
+            <label for="">Até</label>
+            <input id="date" type="date">
+
+            <label for="">Principais atividades exercidas:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <hr>
+
+        <div class="skills">
+            <label for="">Qualificações</label>
+            <input type="text" placeholder="Photoshop">
+            <select name="" id="">
+                <option value="">Básico</option>
+                <option value="">Intermediário</option>
+                <option value="">Avançado</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <div class="languages">
+            <label for="">Idiomas</label>
+            <input type="text" placeholder="Inglês">
+            <select name="" id="">
+                <option value="">Básico</option>
+                <option value="">Intermediário</option>
+                <option value="">Avançado</option>
+                <option value="">Fluente/Nativo</option>
+            </select>
+        </div>
+
+        <div class="courses">
+            <label for="">Cursos:</label>
+            <input type="text" placeholder="Inglês">
+            <label for="">Ano de Conclusão</label>
+            <input type="number">
+            </select>
+        </div>
+
+
+
+
+    </form>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

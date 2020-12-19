@@ -7,13 +7,10 @@
     <title>Curriculo Vitae - Generator</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    
-  
-
 </head>
 
 <body>
-    <form action="cv.html" method="POST">
+    <form>
         <div id="info-item">
             <!-- INFORMAÇÕES PESSOAIS -->
             <h1>Informações pessoais</h1>
@@ -37,31 +34,31 @@
             </div>
         </div>
 
-            <div class="form-civil">
-                <label for="civil">Estado civil</label>
-                <select id="civil">
-                    <option value="SO">Solteiro(a)</option>
-                    <option value="CA">Casado(a)</option>
-                    <option value="SE">Separado(a)</option>
-                    <option value="DI">Divorciado(a)</option>
-                    <option value="VI">Viúvo(a)</option>
-                </select>
-            </div>
+        <div class="form-civil">
+            <label for="civil">Estado civil</label>
+            <select id="civil">
+                <option value="SO">Solteiro(a)</option>
+                <option value="CA">Casado(a)</option>
+                <option value="SE">Separado(a)</option>
+                <option value="DI">Divorciado(a)</option>
+                <option value="VI">Viúvo(a)</option>
+            </select>
+        </div>
 
-            <div class="form-nacional">
-                <label for="nacional">Nacionalidade</label>
-                <input type="text" id="nacional">
-            </div>
+        <div class="form-nacional">
+            <label for="nacional">Nacionalidade</label>
+            <input type="text" id="nacional">
+        </div>
 
-            <div class="form-email">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-            </div>
+        <div class="form-email">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
 
-            <div class="form-phone">
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone">
-            </div>
+        <div class="form-phone">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone">
+        </div>
         </div>
 
         <hr>
@@ -178,7 +175,7 @@
                     <label for="activies">Principais atividades</label>
                     <textarea id="activies"></textarea>
                 </div>
-        </div>
+            </div>
 
 
         </div>
@@ -231,7 +228,7 @@
             </div>
         </div>
 
-        <input type="submit" id="enviar" onclick="sendSubmit()"/></input>
+        <input type="submit" id="enviar" onclick="sendSubmit()" /></input>
     </form>
 
 

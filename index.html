@@ -7,10 +7,13 @@
     <title>Curriculo Vitae - Generator</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    
+  
+
 </head>
 
 <body>
-    <form>
+    <form action="cv.html" method="POST">
         <div id="info-item">
             <!-- INFORMAÇÕES PESSOAIS -->
             <h1>Informações pessoais</h1>
@@ -18,7 +21,6 @@
             <div class="form-name"></div>
             <label for="name">Nome completo</label>
             <input type="text" id="name">
-            </div>
 
             <div class="form-age">
                 <label for="age">Idade</label>
@@ -33,6 +35,7 @@
                     <option value="F">Feminino</option>
                 </select>
             </div>
+        </div>
 
             <div class="form-civil">
                 <label for="civil">Estado civil</label>
@@ -228,10 +231,11 @@
             </div>
         </div>
 
-        <button type="submit" id="enviar" onclick="send()">ENVIAR</button>
+        <input type="submit" id="enviar" onclick="sendSubmit()"/></input>
     </form>
 
 
+    <script src="js/send.js"></script>
     <script src="js/main.js"></script>
 </body>
 

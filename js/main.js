@@ -1,3 +1,61 @@
+/*
+function sendSubmit() {
+    const name = document.getElementById('name').value;
+    const age = document.getElementById('age').value;
+    const sex = document.getElementById('sex').value;
+    const civil = document.getElementById('civil').value;
+    const nacional = document.getElementById('nacional').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const adress = document.getElementById('adress').value;
+    const city = document.getElementById('city').value;
+    const state = document.getElementById('state').value;
+    const objective = document.getElementById('objective').value;
+    const course = document.getElementById('course').value;
+    const institution = document.getElementById('institution').value;
+    const conclusion = document.getElementById('conclusion').value;
+    const year = document.getElementById('year').value;
+    const local = document.getElementById('local').value;
+    const yearIn = document.getElementById('yearIn').value;
+    const yearTo = document.getElementById('yearTo').value;
+    const activies = document.getElementById('activies').value;
+    const qualification = document.getElementById('qualification').value;
+    const nivelQ = document.getElementById('nivelQ').value;
+    const language = document.getElementById('language').value;
+    const nivelLang = document.getElementById('nivelLang').value;
+    
+
+
+    sessionStorage.setItem("NAME", name);
+    sessionStorage.setItem("AGE", age);
+    sessionStorage.setItem("SEX", sex);
+    sessionStorage.setItem("CIVIL", civil);
+    sessionStorage.setItem("NACIONAL", nacional);
+    sessionStorage.setItem("EMAIL", email);
+    sessionStorage.setItem("PHONE", phone);
+    sessionStorage.setItem("ADRESS", adress);
+    sessionStorage.setItem("CITY", city);
+    sessionStorage.setItem("STATE", state);
+    sessionStorage.setItem("OBJECTIVE", objective);
+    sessionStorage.setItem("COURSE", course);
+    sessionStorage.setItem("INSTITUITION", institution);
+    sessionStorage.setItem("CONCLUSION", conclusion);
+    sessionStorage.setItem("YEAR", year);
+    sessionStorage.setItem("LOCAL", local);
+    sessionStorage.setItem("YEARIN", yearIn);
+    sessionStorage.setItem("YEARTO", yearTo);
+    sessionStorage.setItem("ACTIVIES", activies);
+    sessionStorage.setItem("QUALIFICATION", qualification);
+    sessionStorage.setItem("NIVELQ", nivelQ);
+    sessionStorage.setItem("LANGUAGE", language);
+    sessionStorage.setItem("NIVELLANG", nivelLang);
+
+    return;
+}
+*/
+
+/*
+
 function send() { //FUNCÃO PARA CAPTURAR OS INPUTS (TEXT0S)
     //INFO
     const name = document.querySelector('input#name')
@@ -103,15 +161,15 @@ function send() { //FUNCÃO PARA CAPTURAR OS INPUTS (TEXT0S)
         arrLang.push(newDict);
     }
 
-    console.log(arrInfo)
-    console.log(arrAdress)
-    console.log(arrObjective)
-    console.log(arrAcademic)
-    console.log(arrSkills)
-    console.log(arrExp)
-
-
+    //console.log(arrInfo)
+    // console.log(arrAdress)
+    // console.log(arrObjective)
+    // console.log(arrAcademic)
+    // console.log(arrSkills)
+    // console.log(arrExp)
 }
+
+*/
 
 
 
@@ -162,66 +220,13 @@ function cloneField4() {
     document.querySelector('#lang-item').appendChild(newFields)
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//CRIANDO ELEMENTO H1
-function creatH1() {
-    const creatH1 = document.createElement('h1')
-    return creatH1
-}
-
-//CRIANDO ELEMENTO P
-function creatP() {
-    const p = document.createElement('p')
-    return p
-}
-
-function setResultado() {
-    const resultado = document.querySelector('#novocv')
-    resultado.innerHTML = '' //ZERA O FORMULARIO
-
-    const p = creatP() //CRIA UM PARAGRAFO
-    p.innerHTML = 'TESTE'
-    resultado.appendChild(p) //ADICIONA O PARAGRAFO NO HTML
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 //BOTÃO PARA ENVIAR DADOS E NÃO RESETAR A PÁGINA
-document.querySelector("#enviar").onclick = function (e) {
-    send();
-    e.preventDefault();
-    //setResultado()
-    //window.location.href = "cv.html"
-    //cv()
-}
-
+ document.querySelector("#enviar").onclick = function (e) {
+     sendSubmit()
+     //send();
+     e.preventDefault();
+     //setResultado()
+ }
+*/
 

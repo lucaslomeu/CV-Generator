@@ -27,6 +27,11 @@ form .formContainer h1 {
   color: #000;
   letter-spacing: 3px;
 }
+form .formContainer input,
+form .formContainer select,
+form .formContainer button {
+  margin: 2px 0;
+}
 form .formContainer input[type=text],
 form .formContainer input[type=email] {
   width: 300px;

@@ -19,6 +19,11 @@ form .formContainer {
     letter-spacing: 3px;
   }
 
+  input,
+  select,
+  button {
+    margin: 2px 0;
+  }
   input[type='text'],
   input[type='email'] {
     @include inputText(300px);

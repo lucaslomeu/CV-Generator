@@ -10,34 +10,80 @@ html {
   width: 100%;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
 form .formContainer {
   margin: 50px auto;
-  padding: 20px 0 0 30px;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 45%;
   background-color: #fff;
   border-radius: 10px;
   border: 5px solid #000;
+  text-align: left;
 }
 form .formContainer h1 {
   text-transform: uppercase;
   font-size: 25px;
   color: #000;
   letter-spacing: 3px;
+  margin: 25px 0;
+}
+form .formContainer .formGeral {
+  margin: auto;
+}
+form .formContainer label {
+  margin: auto 2px;
+}
+form .formContainer .info-item,
+form .formContainer .form-civil,
+form .formContainer #adress-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 form .formContainer input,
-form .formContainer select,
-form .formContainer button {
-  margin: 2px 0;
+form .formContainer select {
+  margin: 3px 10px;
+  padding-left: 5px;
 }
 form .formContainer input[type=text],
 form .formContainer input[type=email] {
-  width: 300px;
+  width: 180px;
+}
+form .formContainer input[type=text]#adress {
+  width: 250px;
 }
 form .formContainer input[type=number] {
-  width: 30px;
+  width: 40px;
+  text-align: center;
+}
+form .formContainer input[type=tel] {
+  width: 110px;
+}
+form .formContainer #objective-item .form-objective {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .formContainer #objective-item textarea#objective {
+  margin: 15px 0;
+  display: flex;
+  min-width: 40vw;
+  max-width: 40vw;
+  width: 40vw;
+  min-height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+form .formContainer {
+  margin: 50px auto;
+  padding: 20px 0 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 5px solid #000;
+}
+form .formContainer h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  letter-spacing: 3px;
+}
+form .formContainer input[type=text],
+form .formContainer input[type=email] {
+  width: 300px;
+}
+form .formContainer input[type=number] {
+  width: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

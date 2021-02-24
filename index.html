@@ -6,232 +6,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo Vitae - Generator</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles/css/main.css">
 </head>
 
 <body>
     <form>
-        <div id="info-item">
-            <!-- INFORMAÇÕES PESSOAIS -->
-            <h1>Informações pessoais</h1>
+        <div class="formContainer">
+            <div id="info-item">
+                <!-- INFORMAÇÕES PESSOAIS -->
+                <h1>Informações pessoais</h1>
 
-            <div class="form-name"></div>
-            <label for="name">Nome completo</label>
-            <input type="text" id="name">
+                <div class="form-name">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name">
+                </div>
 
-            <div class="form-age">
-                <label for="age">Idade</label>
-                <input type="number" id="age">
+                <div class="form-age">
+                    <label for="age">Idade</label>
+                    <input type="number" id="age">
+                </div>
+
+                <div class="form-sex">
+                    <label for="sex">Sexo</label>
+                    <select id="sex">
+                        <option selected>Escolha seu sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="form-sex">
-                <label for="sex">Sexo</label>
-                <select id="sex">
-                    <option selected>Escolha seu sexo</option>
-                    <option value="M">Masculino</option>
-                    <option value="F">Feminino</option>
+            <div class="form-civil">
+                <label for="civil">Estado civil</label>
+                <select id="civil">
+                    <option value="SO">Solteiro(a)</option>
+                    <option value="CA">Casado(a)</option>
+                    <option value="SE">Separado(a)</option>
+                    <option value="DI">Divorciado(a)</option>
+                    <option value="VI">Viúvo(a)</option>
                 </select>
             </div>
-        </div>
 
-        <div class="form-civil">
-            <label for="civil">Estado civil</label>
-            <select id="civil">
-                <option value="SO">Solteiro(a)</option>
-                <option value="CA">Casado(a)</option>
-                <option value="SE">Separado(a)</option>
-                <option value="DI">Divorciado(a)</option>
-                <option value="VI">Viúvo(a)</option>
-            </select>
-        </div>
-
-        <div class="form-nacional">
-            <label for="nacional">Nacionalidade</label>
-            <input type="text" id="nacional">
-        </div>
-
-        <div class="form-email">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-        </div>
-
-        <div class="form-phone">
-            <label for="phone">Telefone</label>
-            <input type="tel" id="phone">
-        </div>
-        </div>
-
-        <hr>
-
-        <div id="adress-icon">
-            <!-- ENDEREÇO COMPLETO -->
-            <div class="form-adress">
-                <label for="adress">Endereço</label>
-                <input type="text" id="adress" placeholder="Digite sua rua e número residencial">
+            <div class="form-nacional">
+                <label for="nacional">Nacionalidade</label>
+                <input type="text" id="nacional">
             </div>
 
-            <div class="form-city">
-                <label for="city">Cidade</label>
-                <input type="text" id="city">
+            <div class="form-email">
+                <label for="email">Email</label>
+                <input type="email" id="email">
             </div>
 
-            <div class="form-state">
-                <label for="state">Estado</label>
-                <select id="state">
-                    <option selected>Escolha seu estado</option>
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AP">AP</option>
-                    <option value="AM">AM</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES">ES</option>
-                    <option value="GO">GO</option>
-                    <option value="MA">MA</option>
-                    <option value="MT">MT</option>
-                    <option value="MS">MS</option>
-                    <option value="MG">MG</option>
-                    <option value="PA">PA</option>
-                    <option value="PB">PB</option>
-                    <option value="PR">PR</option>
-                    <option value="PB">PB</option>
-                    <option value="PR">PR</option>
-                    <option value="PE">PE</option>
-                    <option value="PI">PI</option>
-                    <option value="RJ">RJ</option>
-                    <option value="RN">RN</option>
-                    <option value="RS">RS</option>
-                    <option value="RO">RO</option>
-                    <option value="RR">RR</option>
-                    <option value="SC">SC</option>
-                    <option value="SP">SP</option>
-                    <option value="SE">SE</option>
-                    <option value="TO">TO</option>
-                </select>
-            </div>
-        </div>
-
-        <hr>
-
-        <div id="objective-item">
-            <!-- OBJETIVO -->
-            <div class="form-objective">
-                <label for="objective">Objetivos</label>
-                <textarea id="objective"></textarea>
-            </div>
-        </div>
-
-        <hr>
-
-        <div id="academic-item">
-            <!-- INFORMAÇÕES ACADÊMICAS -->
-            <h1>Formação Acadêmica</h1>
-            <button type="button" id="addCourse">Adicionar outro curso</button>
-
-            <div class="academic">
-                <div class="form-course">
-                    <label for="course">Curso</label>
-                    <input type="text" id="course">
-                </div>
-
-                <div class="form-institution">
-                    <label for="institution">Instituição</label>
-                    <input type="text" id="institution">
-                </div>
-
-                <div class="form-conclusion">
-                    <select id="conclusion" class="form-control">
-                        <option value="CO">Concluído em:</option>
-                        <option value="PR">Previsão de conclusão em:</option>
-                    </select>
-                    <input type="date" id="year">
-                </div>
-
-            </div>
-        </div>
-
-        <hr>
-
-        <div id="skills-item">
-            <!-- EXPERIÊNCIAS PROFISSIONAIS -->
-            <h1>Experiências</h1>
-            <button type="button" id="addSkill">Adicionar outra experiência</button>
-            <div class="skills">
-
-                <div class="form-local">
-                    <label for="local">Nome da empresa</label>
-                    <input type="text" id="local">
-                </div>
-
-                <div class="form-year">
-                    <label for="yearIn">De</label>
-                    <input type="date" id="yearIn">
-                    <label for="yearTo">Até</label>
-                    <input type="date" id="yearTo">
-                </div>
-
-                <div class="form-activies">
-                    <label for="activies">Principais atividades</label>
-                    <textarea id="activies"></textarea>
-                </div>
+            <div class="form-phone">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone">
             </div>
 
-
-        </div>
-        <hr>
-
-        <div id="qualification-item">
-            <!-- QUALIFICAÇÕES -->
-            <h1>Qualificações</h1>
-            <button type="button" id="addQualification">Adicionar outra
-                qualificação</button>
-
-            <div class="qualification">
-                <div class="form-qualification">
-                    <label for="qualification">Qualificação</label>
-                    <input type="text" id="qualification" placeholder="Microsoft Word">
+            <div id="adress-icon">
+                <!-- ENDEREÇO COMPLETO -->
+                <div class="form-adress">
+                    <label for="adress">Endereço</label>
+                    <input type="text" id="adress" placeholder="Digite sua rua e número residencial">
                 </div>
 
-                <div class="form-nivelQ">
-                    <label for="nivelQ">Nivel</label>
-                    <select id="nivelQ">
-                        <option value="Basic">Básico</option>
-                        <option value="intermediate">Intermediário</option>
-                        <option value="advance">Avançado</option>
+                <div class="form-city">
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city">
+                </div>
+
+                <div class="form-state">
+                    <label for="state">Estado</label>
+                    <select id="state">
+                        <option selected>Escolha seu estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
                     </select>
                 </div>
             </div>
-        </div>
 
-        <hr>
-
-        <div id="lang-item">
-            <!-- IDIOMAS -->
-            <h1>Idiomas</h1>
-            <button type="button" id="addLang">Adicionar outro idioma</button>
-            <div class="lang">
-
-                <div class="form-language">
-                    <label for="language">Idioma</label>
-                    <input type="text" id="language" placeholder="Inglês">
-                </div>
-
-                <div class="form-nivelLang">
-                    <label for="nivelLang">Nivel</label>
-                    <select id="nivelLang">
-                        <option value="B">Básico</option>
-                        <option value="I">Intermediário</option>
-                        <option value="A">Avançado</option>
-                    </select>
+            <div id="objective-item">
+                <!-- OBJETIVO -->
+                <div class="form-objective">
+                    <label for="objective">Objetivos</label>
+                    <textarea id="objective"></textarea>
                 </div>
             </div>
-        </div>
 
-        <input type="submit" id="enviar" onclick="sendSubmit()" /></input>
+            <div id="academic-item">
+                <!-- INFORMAÇÕES ACADÊMICAS -->
+                <h1>Formação Acadêmica</h1>
+                <button type="button" id="addCourse">Adicionar outro curso</button>
+
+                <div class="academic">
+                    <div class="form-course">
+                        <label for="course">Curso</label>
+                        <input type="text" id="course">
+                    </div>
+
+                    <div class="form-institution">
+                        <label for="institution">Instituição</label>
+                        <input type="text" id="institution">
+                    </div>
+
+                    <div class="form-conclusion">
+                        <select id="conclusion" class="form-control">
+                            <option value="CO">Concluído em:</option>
+                            <option value="PR">Previsão de conclusão em:</option>
+                        </select>
+                        <input type="date" id="year">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="skills-item">
+                <!-- EXPERIÊNCIAS PROFISSIONAIS -->
+                <h1>Experiências</h1>
+                <button type="button" id="addSkill">Adicionar outra experiência</button>
+                <div class="skills">
+
+                    <div class="form-local">
+                        <label for="local">Nome da empresa</label>
+                        <input type="text" id="local">
+                    </div>
+
+                    <div class="form-year">
+                        <label for="yearIn">De</label>
+                        <input type="date" id="yearIn">
+                        <label for="yearTo">Até</label>
+                        <input type="date" id="yearTo">
+                    </div>
+
+                    <div class="form-activies">
+                        <label for="activies">Principais atividades</label>
+                        <textarea id="activies"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id="qualification-item">
+                <!-- QUALIFICAÇÕES -->
+                <h1>Qualificações</h1>
+                <button type="button" id="addQualification">Adicionar outra
+                    qualificação</button>
+
+                <div class="qualification">
+                    <div class="form-qualification">
+                        <label for="qualification">Qualificação</label>
+                        <input type="text" id="qualification" placeholder="Microsoft Word">
+                    </div>
+
+                    <div class="form-nivelQ">
+                        <label for="nivelQ">Nivel</label>
+                        <select id="nivelQ">
+                            <option value="Basic">Básico</option>
+                            <option value="intermediate">Intermediário</option>
+                            <option value="advance">Avançado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="lang-item">
+                <!-- IDIOMAS -->
+                <h1>Idiomas</h1>
+                <button type="button" id="addLang">Adicionar outro idioma</button>
+                <div class="lang">
+
+                    <div class="form-language">
+                        <label for="language">Idioma</label>
+                        <input type="text" id="language" placeholder="Inglês">
+                    </div>
+
+                    <div class="form-nivelLang">
+                        <label for="nivelLang">Nivel</label>
+                        <select id="nivelLang">
+                            <option value="B">Básico</option>
+                            <option value="I">Intermediário</option>
+                            <option value="A">Avançado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" id="enviar" onclick="sendSubmit()" /></input>
+        </div>
     </form>
 
-    //SCRIPTS
+
     <script src="js/send.js"></script>
     <script src="js/main.js"></script>
 </body>

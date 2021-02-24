@@ -1,0 +1,30 @@
+@import './reset.scss';
+@import './mixins.scss';
+
+form .formContainer {
+  margin: 50px auto;
+  padding: 20px 0 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 5px solid #000;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #000;
+    letter-spacing: 3px;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    @include inputText(300px);
+  }
+
+  input[type='number'] {
+    @include inputText(30px);
+  }
+}
